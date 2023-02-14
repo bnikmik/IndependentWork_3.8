@@ -14,6 +14,9 @@ public class HibernateSessionFactoryUtil {
     public HibernateSessionFactoryUtil() {
     }
 
+    /**
+     * Associates the given session with the current thread of execution.
+     */
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
